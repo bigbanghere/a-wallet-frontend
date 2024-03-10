@@ -2,32 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: local('SF Pro Text Light'), local('SFProText-Light'),
+    url('./fonts/sf-pro/sf-pro-text-light.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/sf-pro-text-light.woff') format('woff'),
+    url('./fonts/sf-pro/sf-pro-text-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: local('SF Pro Text Regular'), local('SFProText-Regular'),
+    url('./fonts/sf-pro/sf-pro-text-regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/sf-pro-text-regular.woff') format('woff'),
+    url('./fonts/sf-pro/sf-pro-text-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: local('SF Pro Text Medium'), local('SFProText-Medium'),
+    url('./fonts/sf-pro/sf-pro-text-medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/sf-pro-text-medium.woff') format('woff'),
+    url('./fonts/sf-pro/sf-pro-text-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: local('SF Pro Text Semibold'), local('SFProText-Semibold'),
+    url('./fonts/sf-pro/sf-pro-text-semibold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/sf-pro-text-semibold.woff') format('woff'),
+    url('./fonts/sf-pro/sf-pro-text-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: local('SF Pro Text Bold'), local('SFProText-Bold'),
+    url('./fonts/sf-pro/sf-pro-text-bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/sf-pro-text-bold.woff') format('woff'),
+    url('./fonts/sf-pro/sf-pro-text-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: local('SF Pro Text Heavy'), local('SFProText-Heavy'),
+    url('./fonts/sf-pro/sf-pro-text-heavy.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/sf-pro-text-heavy.woff') format('woff'),
+    url('./fonts/sf-pro/sf-pro-text-heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 239, 238, 244;
+    --font-sf-pro-text: "SF Pro Text";
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-rgb: 239, 238, 244;
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
+    margin: 0 auto;
+    max-width: 375px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+/*.gradient-border {*/
+/*    border: 2px solid transparent; !*2*!*/
+/*    background: linear-gradient(180deg, #38C387 0%, #3DACDE 100%) border-box;*/
+/*    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#333 0 0);*/
+/*    -webkit-mask-composite: xor; !*5'*!*/
+/*    mask-composite: exclude; !*5*!*/
+/*}*/
+
+.gradient-border {
+    position: relative;
+}
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background:linear-gradient(180deg, #38C387 0%, #3DACDE 100%);
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }

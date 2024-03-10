@@ -1,14 +1,17 @@
 import {ReactNode} from "react";
-import {ArrowDownIcon, ArrowPathIcon, ArrowUpIcon, TonIcon, USDTIcon} from "@/components/icons";
+import {ArrowDownIcon, ArrowPathIcon, ArrowUpIcon, ChevronDownIcon} from "@/components/icons";
 import Image from "next/image";
 import Link from "next/link";
-import Tab from "@/app/tab";
 
 const CircleButton = ({children}: { children: ReactNode }) => {
     return (
         <button
-            className="w-10 h-10 rounded-full bg-gradient-to-r from-royal-blue to-sky-blue-1 flex justify-center items-center">
-            {children}
+            className="w-[30px] h-[30px] rounded-full gradient-border">
+            <div className="rounded-full bg-white w-7 h-7 flex justify-center items-center mx-auto">
+                {/*<div className="bg-gradient-to-r from-[#38C385] to-[#3DACDF] inline-block text-transparent bg-clip-text">*/}
+                    {children}
+                {/*</div>*/}
+            </div>
         </button>
     )
 }
@@ -65,29 +68,36 @@ const ListItem = ({variant = 0}: { variant: number }) => {
 export default function Home() {
     return (
         <main className="w-full min-h-screen p-4">
-            <div className="flex flex-col w-full bg-white rounded-[10px] pt-5 px-4  space-y-4">
-                <div className="flex flex-row items-center justify-between border-b border-grayish-purple pb-4">
+            <div className="bg-white flex flex-row items-center justify-between rounded-[10px] py-2.5 px-4">
+                <div className="flex flex-row items-center">
                     <div className="text-center">
-                        <div className="text-2xl font-medium">5,00$</div>
-                        <p className="text-grayish-blue text-xs mt-1.5">Balance</p>
+                        <div className="text-[13px] font-medium">5,00$</div>
+                        <p className="text-grayish-blue text-xs mt-[5px]">Balance</p>
                     </div>
-                    <div
-                        className="flex flex-row justify-center items-center space-x-5 text-center text-grayish-blue">
-                        <div>
-                            <CircleButton><ArrowUpIcon className="w-4 h-4 text-white " strokeWidth="3"/></CircleButton>
-                            <div className="text-xss mt-1.5">Send</div>
-                        </div>
-                        <div>
-                            <CircleButton><ArrowPathIcon className="w-4 h-4 text-white "
-                                                         strokeWidth="3"/></CircleButton>
-                            <div className="text-xss mt-1.5 ">Swap</div>
-                        </div>
-                        <div>
-                            <CircleButton><ArrowDownIcon className="w-4 h-4 text-white" strokeWidth="3"/></CircleButton>
-                            <div className="text-xss mt-1.5">Receive</div>
-                        </div>
+                    <div className="ml-3"><ChevronDownIcon strokeWidth={3} height={9} width={9} className="text-grayish-blue"/></div>
+                </div>
+                <div
+                    className="flex flex-row-reverse justify-center  items-center text-center text-grayish-blue">
+
+                    <div>
+                        <CircleButton><ArrowDownIcon className="w-4 h-4" strokeWidth="3"/></CircleButton>
+
+                    </div>
+                    <div className="mr-[-8px]">
+                        <CircleButton>
+                            <ArrowPathIcon className="w-4 h-4"
+                                           strokeWidth="3"/>
+                        </CircleButton>
+                    </div>
+
+                    <div className="mr-[-8px]">
+                        <CircleButton><ArrowUpIcon className="w-4 h-4" strokeWidth="3"/></CircleButton>
+
                     </div>
                 </div>
+            </div>
+
+            <div className="flex flex-col w-full bg-white rounded-[10px] mt-4 pt-5 px-4  space-y-4">
 
                 <div className="flex text-[13px] font-medium text-center space-x-4">
                     <Link href="#" className="text-royal-blue custom-link"
