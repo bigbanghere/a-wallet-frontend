@@ -71,8 +71,8 @@ export default function Home() {
             <div className="bg-white flex flex-row items-center justify-between rounded-[10px] py-2.5 px-4">
                 <div className="flex flex-row items-center">
                     <div className="text-center">
-                        <div className="text-[13px] font-medium">5,00$</div>
-                        <p className="text-grayish-blue text-xs mt-[5px]">Balance</p>
+                        <div className="text-[13px] font-medium leading-4">5,00$</div>
+                        <p className="text-grayish-blue text-xs mt-1 leading-3">Balance</p>
                     </div>
                     <div className="ml-3"><ChevronDownIcon strokeWidth={3} height={9} width={9} className="text-grayish-blue"/></div>
                 </div>

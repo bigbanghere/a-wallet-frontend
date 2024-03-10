@@ -37,8 +37,8 @@ export default function Home() {
         <main className="w-full min-h-screen p-4">
             <div className="flex flex-col w-full bg-white rounded-[10px] py-5 px-4">
                 <div className="text-center">
-                    <div className="text-2xl font-medium">5,00$</div>
-                    <p className="text-grayish-blue text-xs mt-1.5">Balance</p>
+                    <div className="text-2xl font-medium ">5,00$</div>
+                    <p className="text-grayish-blue text-xs mt-1 leading-3">Balance</p>
                 </div>
                 <div
                     className="w-full flex flex-row justify-center items-center space-x-5 mt-4 text-center text-grayish-blue">
@@ -70,7 +70,7 @@ export default function Home() {
                     </ListItem>
                     <ListItem icon={
                         <div
-                            className="mr-3 rounded-full h-[30px] w-[30px] bg-gradient-to-r from-turquoise to-cyan flex justify-center items-center">
+                            className="rounded-full h-[30px] w-[30px] bg-gradient-to-r from-turquoise to-cyan flex justify-center items-center">
                             <USDTIcon className="shrink" height={16} width={16}/>
                         </div>}>
 
@@ -84,7 +84,7 @@ export default function Home() {
                     </ListItem>
                     <ListItem icon={
                         <div
-                            className="text-white mr-3 rounded-full h-[30px] w-[30px] bg-gradient-to-r from-[#37C383] to-[#3DA7ED] flex justify-center items-center">
+                            className="text-white rounded-full h-[30px] w-[30px] bg-gradient-to-r from-[#37C383] to-[#3DA7ED] flex justify-center items-center">
                             <div className="font-medium leading-4">$</div>
                         </div>}>
 
