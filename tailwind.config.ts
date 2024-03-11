@@ -9,6 +9,10 @@ const config: Config = {
 
     theme: {
         extend: {
+
+            blur: {
+                xs: '2px',
+            },
             fontSize: {
                 "xss": "10px",
                 "ssm": "13px",
@@ -17,6 +21,7 @@ const config: Config = {
             },
             borderRadius: {
                 sxl: "10px",
+                "2.5xl":"20px",
             },
             fontFamily: {
                 "sf-pro": ['var(--font-sf-pro-text)', "serif"],
@@ -35,11 +40,12 @@ const config: Config = {
                 "dodger-blue-100": "#1196FF",
                 "dodger-blue-200": "#3DAAE4",
                 "sky-blue-1":"#3DA6F0",
-                "sky-blue-2":"#5BB7FF",
-                "sky-blue-3":"#3DB0D1",
+                "sky-blue-2":"#3DB0D1",
+                "sky-blue-3":"#5BB7FF",
                 "cerulean-blue":"#037EE5",
                 "royal-blue":"#0477FF",
                 "azure-blue": "#007AFF",
+                "electric-blue":"#259EFF",
                 "turquoise":"#3ABCA5",
                 "cyan":"#3BB7B7",
                 "pale-lime":"#E1FEC6",

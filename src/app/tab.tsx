@@ -14,12 +14,12 @@ const MenuTab = () => {
         <Tab.Group>
 
             <div className="mt-3.5">
-                <Tab.List className="w-full flex flex-row gap-3 bg-off-white-100 justify-around rounded-md text-black text-xs">
-                    {Object.keys(categories).map((category) => (
+                <Tab.List className="w-full outline-none p-px flex flex-row gap-3 bg-off-white-100 justify-around rounded-md text-black text-xs">
+                    {categories.map((category) => (
                         <Tab
                             key={category}
                             className={({selected}) =>
-                                clsx('rounded-md grow py-1 text-xs', selected && 'bg-white font-semibold outline-0')
+                                clsx('rounded-md grow py-1 text-xs outline-none', selected && 'bg-white font-semibold ')
                             }
                         >
                             {category}

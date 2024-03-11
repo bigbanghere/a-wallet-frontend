@@ -52,7 +52,7 @@ const ListItem = ({variant = 0}: { variant: number }) => {
                             15:00
                         </div>
                         {variant === 1 ? (
-                            <p className="font-medium text-sky-blue-3 whitespace-nowrap">+2,2 TON</p>
+                            <p className="font-medium text-sky-blue-2 whitespace-nowrap">+2,2 TON</p>
                         ) : (
                             <div
                                 className="text-white bg-azure-blue rounded-full h-[22px] w-[22px] text-center leading-[22px]">1

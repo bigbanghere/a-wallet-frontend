@@ -1,8 +1,7 @@
 import {ReactNode} from "react";
 import {ArrowDownIcon, ArrowPathIcon, ArrowUpIcon, TonIcon, USDTIcon} from "@/components/icons";
 import Image from "next/image";
-import Link from "next/link";
-import Tab from "@/app/tab";
+import Tab from "./tab";
 
 const CircleButton = ({children}: { children: ReactNode }) => {
     return (
@@ -58,7 +57,7 @@ export default function Home() {
                 <div className="mt-8">
                     <ListItem icon={
                         <div
-                            className="rounded-full h-[30px] w-[30px] bg-gradient-to-r from-sky-blue-2 to-dodger-blue-200 flex justify-center items-center">
+                            className="rounded-full h-[30px] w-[30px] bg-gradient-to-r from-sky-blue-3 to-dodger-blue-200 flex justify-center items-center">
                             <TonIcon height={16} width={16}/>
                         </div>}>
                         <div className="flex flex-col space-y-[1px] mr-auto">

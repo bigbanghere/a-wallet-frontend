@@ -34,7 +34,7 @@ const SendMessage = ({message, time}: {message:string, time: string})=>{
 const InputMenu = ({className=""}:{className?:string})=>{
     return (
         <div className={`flex flex-row justify-between text-blue-gray  items-center space-x-2.5 ${className}`}>
-            <div className="relative rounded-lg  w-full">
+            <div className="relative rounded-lg  w-full outline-0">
                 <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                     <PaperAirplaneIcon width={14} height={14} />
                 </div>
@@ -42,7 +42,7 @@ const InputMenu = ({className=""}:{className?:string})=>{
                        className={clsx(
                            "h-8 w-full bg-grayish-purple outline-0",
                            "block w-full rounded-lg border-0 py-1.5 pl-8 ",
-                           "placeholder:text-blue-gray  focus:ring-2 focus:ring-inset",
+                           "placeholder:text-blue-gray ",
                            "sm:text-sm sm:leading-6"
                        )}
                        placeholder="Write your message"/>

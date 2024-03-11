@@ -91,6 +91,60 @@ export const PaperAirplaneIcon = ({height = 24, width = 24, className = "", stro
     )
 }
 
+export const InformationCircleIcon = ({height = 24, width = 24, className = "", strokeWidth = 1.5}: Props) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+             className={className}
+             width={width} height={height} strokeWidth={strokeWidth}
+        >
+            <path fillRule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                  clipRule="evenodd"/>
+        </svg>
+    )
+}
+
+export const CurrencyDollarIcon = ({height = 24, width = 24, className = "", strokeWidth = 2}: Props) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+             className={className}
+             width={width} height={height} strokeWidth={strokeWidth}
+        >
+            <path
+                d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z"/>
+            <path fillRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z"
+                  clipRule="evenodd"/>
+        </svg>
+
+    )
+}
+
+export const ShareIcon = ({height = 24, width = 24, className = "", strokeWidth = 2}: Props) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke="currentColor"
+
+             className={className}
+             width={width} height={height} strokeWidth={strokeWidth}>
+            <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"/>
+        </svg>
+    )
+}
+
+export const CopyIcon = ({height = 24, width = 24, className = "", strokeWidth = 2}: Props) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke="currentColor"
+
+             className={className}
+             width={width} height={height} strokeWidth={strokeWidth}>
+            <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/>
+        </svg>
+
+    )
+}
+
 
 export const ArrowPathIcon = ({height = 24, width = 24, className = "", strokeWidth = 2}: Props) => {
     return (
@@ -110,7 +164,7 @@ export const TonIcon = ({height = 24, width = 24, className = "", strokeWidth = 
         <svg
             strokeWidth={strokeWidth}
             className={className}
-            width={width} height={height} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            width={width} height={height} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M13.5435 0.371979H3.29975C1.41628 0.371979 0.222495 2.40367 1.17007 4.04612L7.49214 15.004C7.90469 15.7195 8.93857 15.7195 9.35112 15.004L15.6745 4.04612C16.6208 2.4063 15.427 0.371979 13.5448 0.371979H13.5435ZM7.487 11.7179L6.11016 9.05323L2.78798 3.11146C2.56882 2.73116 2.83951 2.24382 3.29846 2.24382H7.48571V11.7192L7.487 11.7179ZM14.0527 3.11018L10.7318 9.05451L9.35498 11.7179V2.24253H13.5422C14.0012 2.24253 14.2719 2.72987 14.0527 3.11018Z"
                 fill="white"/>

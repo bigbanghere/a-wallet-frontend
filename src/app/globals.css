@@ -88,7 +88,7 @@ body {
     color: rgb(var(--foreground-rgb));
     background: rgb(var(--background-rgb));
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 400px;
     font-size: 15px;
     line-height: 18px;
 }
